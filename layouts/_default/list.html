@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ range .Paginator.Pages }}
+    <h1 class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
+  {{ end }}
+{{ end }}
